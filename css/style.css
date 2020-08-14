@@ -1,0 +1,197 @@
+/* при  окончательном оформлении
+ проверить закоментированные значения */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: roboto, sans-serif;
+  color: #757575;
+}
+
+.title {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.header-title-color {
+  color: #2196f3;
+}
+.nav-elements-style {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.studio-link-current-color {
+  color: #2196f3;
+}
+
+/* убирает подчеркивание ссылок */
+a {
+  text-decoration-line: none;
+  /* наследует значение свойства предка */
+  color: inherit;
+}
+
+a:focus {
+  color: #2196f3;
+  outline-color: inherit;
+}
+
+.contacts-link-style {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.address-map {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  /* color: #ffffff; */
+}
+
+.hover-for-regular-links:hover {
+  color: #2196f3;
+}
+
+.porfolio-buttons button:hover {
+  background-color: #2196f3;
+  color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/*  порядок вставки псевоклассов по спец
+a:link { color: red; }
+a:visited { color: grey; }
+a:hover { color: blue; }
+a:active { background-color: yellow; } */
+
+.tagline {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  /* text-align: center; */
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  /* color: #ffffff; */
+}
+
+.features-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.features li p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.about-work-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.about-us-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.about-our-team li h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.about-our-team li p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+}
+
+.button-1 {
+  padding: 10px 32px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+  font-family: roboto, sans-serif;
+  border: none;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.portfolio-link-current-color {
+  color: #2196f3;
+}
+
+.porfolio-buttons button {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: none;
+  cursor: pointer;
+  box-shadow: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  font-family: roboto, sans-serif;
+}
+
+.projects-container {
+  color: #212121;
+}
+
+.projects-container li a h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+
+.projects-container li a p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
