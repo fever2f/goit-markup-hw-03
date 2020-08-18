@@ -1,10 +1,14 @@
 /* при  окончательном оформлении
  проверить закоментированные значения */
 
-* {
-  margin: 0;
-  padding: 0;
+html {
   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -12,16 +16,28 @@ body {
   color: #757575;
 }
 
-.title {
+/* убирает маркеры в маркированном списке */
+li {
+  list-style: none;
+}
+
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.page-title {
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #000000;
+  outline: 1px solid red;
 }
 
-.header-title-color {
+.page-title-color {
   color: #2196f3;
 }
 .nav-elements-style {
@@ -30,6 +46,7 @@ body {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #212121;
+  outline: 1px solid red;
 }
 
 .studio-link-current-color {
@@ -54,22 +71,24 @@ a:focus {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  outline: 1px solid red;
 }
 
 .address-map {
+  outline: 1px solid red;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  /* color: #ffffff; */
+  color: #ffffff;
 }
 
 .hover-for-regular-links:hover {
   color: #2196f3;
 }
 
-.porfolio-buttons button:hover {
+.portfolio-buttons:hover {
   background-color: #2196f3;
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -82,17 +101,50 @@ a:visited { color: grey; }
 a:hover { color: blue; }
 a:active { background-color: yellow; } */
 
-.tagline {
+.hero {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #2f303a;
+}
+
+.hero-tagline {
+  margin-top: 0;
+  margin-bottom: 30px;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* color: #ffffff; */
+  color: #fff;
+  /* text-align: center; */
+  /* width: 696px;
+  height: 120px; */
 }
 
-.features-title {
+.button-hero {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+  font-family: roboto, sans-serif;
+  border: 1px solid transparent;
+  text-align: center;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.features-list-item-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -101,14 +153,17 @@ a:active { background-color: yellow; } */
   color: #212121;
 }
 
-.features li p {
+.features-list-item-child {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  margin-bottom: 94px;
 }
 
 .about-work-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
@@ -124,17 +179,21 @@ a:active { background-color: yellow; } */
   /* text-align: center; */
   letter-spacing: 0.03em;
   color: #212121;
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
-.about-our-team li h4 {
+.about-our-team-list li h4 {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   /* text-align: center; */
   letter-spacing: 0.03em;
   color: #212121;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-.about-our-team li p {
+.about-our-team-list li p {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
@@ -142,35 +201,26 @@ a:active { background-color: yellow; } */
   letter-spacing: 0.03em;
 }
 
-.button-1 {
-  padding: 10px 32px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  color: #ffffff;
-  font-family: roboto, sans-serif;
-  border: none;
-
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+.about-our-team-list {
+  background-color: #fff;
 }
 
 .portfolio-link-current-color {
   color: #2196f3;
 }
 
-.porfolio-buttons button {
+.portfolio-buttons {
+  display: inline-block;
   background-color: #f5f4fa;
   border-radius: 4px;
   padding: 6px 22px;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
   box-shadow: none;
+
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -194,4 +244,48 @@ a:active { background-color: yellow; } */
   line-height: 30px;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+/* end of html and text decoration */
+
+/* block and flex */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid blue;
+}
+
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team {
+  background-color: skyblue;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section {
+  outline: 1px solid magenta;
+}
+
+footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-nav {
+  margin-bottom: 20px;
+}
+
+.address-list-item {
+  margin-bottom: 9px;
+}
+.address-list-item:last-child {
+  margin-bottom: 0;
 }
