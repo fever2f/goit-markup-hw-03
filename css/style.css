@@ -87,14 +87,15 @@ a {
 
 .header-address-list {
   display: flex;
+  margin-left: auto;
 }
 
 .studio-link-current-color {
   color: #2196f3;
 }
 
-/* .header {
-  display: flex; */
+.header-div {
+  display: flex;
 }
 
 /* убирает подчеркивание ссылок */
