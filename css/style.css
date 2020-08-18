@@ -27,6 +27,14 @@ p {
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
 .page-title {
   font-family: Raleway, sans-serif;
   font-weight: bold;
@@ -35,12 +43,16 @@ p {
   letter-spacing: 0.03em;
   color: #000000;
   outline: 1px solid red;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
 }
 
 .page-title-color {
   color: #2196f3;
 }
 .nav-elements-style {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -48,17 +60,49 @@ p {
   color: #212121;
   outline: 1px solid red;
 }
+.nav-elements-style li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-elements-style .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: inherit;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-address-list .item + .item {
+  margin-left: 50px;
+}
+
+.header-address-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-address-list {
+  display: flex;
+}
 
 .studio-link-current-color {
   color: #2196f3;
 }
 
+/* .header {
+  display: flex; */
+}
+
 /* убирает подчеркивание ссылок */
-a {
+/* a {
   text-decoration-line: none;
   /* наследует значение свойства предка */
   color: inherit;
-}
+} */
 
 a:focus {
   color: #2196f3;
@@ -71,6 +115,7 @@ a:focus {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  color: #757575;
   outline: 1px solid red;
 }
 
@@ -295,6 +340,17 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+.page-title-in-footer {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  outline: 1px solid red;
+}
+
 
 .footer-nav {
   margin-bottom: 20px;
