@@ -88,7 +88,7 @@ a:focus {
   color: #2196f3;
 }
 
-.portfolio-buttons:hover {
+.portfolio-button-item:hover {
   background-color: #2196f3;
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -158,6 +158,9 @@ a:active { background-color: yellow; } */
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+}
+
+.features-list {
   margin-bottom: 94px;
 }
 
@@ -167,7 +170,7 @@ a:active { background-color: yellow; } */
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
-  /* text-align: center; */
+  text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -209,7 +212,7 @@ a:active { background-color: yellow; } */
   color: #2196f3;
 }
 
-.portfolio-buttons {
+.portfolio-button-item {
   display: inline-block;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -227,18 +230,20 @@ a:active { background-color: yellow; } */
   font-family: roboto, sans-serif;
 }
 
-.projects-container {
-  color: #212121;
+.portfolio-buttons-list {
+  margin-bottom: 50px;
 }
 
-.projects-container li a h3 {
+.projects-list-item-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
+  color: #212121;
+  margin: 0 0 4px 0;
 }
 
-.projects-container li a p {
+.projects-list-item a p {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
@@ -246,14 +251,24 @@ a:active { background-color: yellow; } */
   color: #757575;
 }
 
-/* end of html and text decoration */
+.projects-list-item img {
+  margin-bottom: 20px;
+}
 
-/* block and flex */
+.projects-list-item {
+  background-color: #fff;
+  padding-bottom: 20px;
+  border: 1px solid #eeeeee;
+}
 
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid blue;
+}
+
+.container-portfolio-buttons {
+  width: 611px;
   margin: 0 auto;
   outline: 1px solid blue;
 }
@@ -283,9 +298,10 @@ footer {
   margin-bottom: 20px;
 }
 
-.address-list-item {
+.address-list-item:not(:last-child) {
   margin-bottom: 9px;
 }
-.address-list-item:last-child {
-  margin-bottom: 0;
+
+.portfolio {
+  padding: 94px 0 94px 0;
 }
