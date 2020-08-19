@@ -18,49 +18,52 @@
     <!--Верхняя линия-->
     <header>
       <div class="container">
-        <nav>
-          <a class="page-title hover-for-regular-links" href="./index.html">
-            <span class="page-title-color">Web</span>Studio
-          </a>
-          <ul class="nav-elements-style">
-            <li>
-              <a href="/"
-                ><span class="studio-link-current-color">Студия</span></a
-              >
+        <div class="header-div">
+          <nav class="header-nav">
+            <a class="page-title hover-for-regular-links" href="./index.html">
+              <span class="page-title-color">Web</span>Studio
+            </a>
+            <ul class="nav-elements-style">
+              <li>
+                <a class="link" href="/"
+                  ><span class="studio-link-current-color">Студия</span></a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover-for-regular-links link"
+                  href="./portfolio.html"
+                  target="_blank"
+                  >Портфолио</a
+                >
+              </li>
+              <li>
+                <a class="hover-for-regular-links link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="header-address-list">
+            <li class="item">
+              <address>
+                <a
+                  class="hover-for-regular-links contacts-link-style link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </address>
             </li>
-            <li>
-              <a
-                class="hover-for-regular-links"
-                href="./portfolio.html"
-                target="_blank"
-                >Портфолио</a
-              >
-            </li>
-            <li>
-              <a class="hover-for-regular-links" href="">Контакты</a>
+            <li class="item">
+              <address>
+                <a
+                  class="hover-for-regular-links contacts-link-style link"
+                  href="tel:+380961111111"
+                  >+380961111111</a
+                >
+              </address>
             </li>
           </ul>
-        </nav>
-      </div>
-      <div class="container">
-        <address>
-          <ul>
-            <li>
-              <a
-                class="hover-for-regular-links contacts-link-style"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="hover-for-regular-links contacts-link-style"
-                href="tel:+380961111111"
-                >+380961111111</a
-              >
-            </li>
-          </ul>
-        </address>
+        </div>
       </div>
     </header>
 
@@ -69,7 +72,7 @@
 
       <!-- filters -->
       <section class="portfolio section">
-        <div class="container-portfolio-buttons">
+        <div class="container">
           <ul class="portfolio-buttons-list">
             <li>
               <button class="portfolio-button-item" type="button">
@@ -97,10 +100,9 @@
               </button>
             </li>
           </ul>
-        </div>
-        <!-- projects -->
 
-        <div class="container">
+          <!-- projects -->
+
           <ul class="projects-list">
             <li class="projects-list-item">
               <img
@@ -209,36 +211,43 @@
     <footer>
       <div class="container">
         <nav class="footer-nav">
-          <a class="page-title hover-for-regular-links" href="./index.html">
+          <a
+            class="page-title-in-footer hover-for-regular-links"
+            href="./index.html"
+          >
             <span class="page-title-color">Web</span>Studio
           </a>
         </nav>
-        <address>
-          <ul class="address-list">
-            <li class="address-list-item">
+        <ul class="address-list">
+          <li class="address-list-item">
+            <address>
               <a
                 class="address-map hover-for-regular-links"
-                href="https://goo.gl/maps/rDXgbdoQVFNTfPx67"
                 target="_blank"
+                href="https://goo.gl/maps/rDXgbdoQVFNTfPx67"
                 >г. Киев, пр-т Леси Украинки, 26
               </a>
-            </li>
-            <li class="address-list-item">
+            </address>
+          </li>
+          <li class="address-list-item">
+            <address>
               <a
                 class="hover-for-regular-links contacts-link-style"
                 href="mailto:info@example.com"
                 >info@example.com</a
               >
-            </li>
-            <li class="address-list-item">
+            </address>
+          </li>
+          <li class="address-list-item">
+            <address>
               <a
                 class="hover-for-regular-links contacts-link-style"
                 href="tel:+380961111111"
                 >+380961111111</a
               >
-            </li>
-          </ul>
-        </address>
+            </address>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>

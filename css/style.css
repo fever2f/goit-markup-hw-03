@@ -42,7 +42,6 @@ a {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #000000;
-  outline: 1px solid red;
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
@@ -58,7 +57,6 @@ a {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #212121;
-  outline: 1px solid red;
 }
 .nav-elements-style li:not(:last-child) {
   margin-right: 50px;
@@ -98,13 +96,6 @@ a {
   display: flex;
 }
 
-/* убирает подчеркивание ссылок */
-/* a {
-  text-decoration-line: none;
-  /* наследует значение свойства предка */
-  color: inherit;
-} */
-
 a:focus {
   color: #2196f3;
   outline-color: inherit;
@@ -117,11 +108,9 @@ a:focus {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
-  outline: 1px solid red;
 }
 
 .address-map {
-  outline: 1px solid red;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -260,11 +249,11 @@ a:active { background-color: yellow; } */
 }
 
 .about-our-team-list-item {
-  background: #FFFFFF;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
-
 }
 
 .portfolio-link-current-color {
@@ -272,7 +261,6 @@ a:active { background-color: yellow; } */
 }
 
 .portfolio-button-item {
-  display: inline-block;
   background-color: #f5f4fa;
   border-radius: 4px;
   padding: 6px 22px;
@@ -291,6 +279,12 @@ a:active { background-color: yellow; } */
 
 .portfolio-buttons-list {
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-buttons-list li:not(:last-child) {
+  margin-right: 8px;
 }
 
 .projects-list-item-title {
@@ -300,14 +294,18 @@ a:active { background-color: yellow; } */
   letter-spacing: 0.06em;
   color: #212121;
   margin: 0 0 4px 0;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
-.projects-list-item a p {
+.projects-list-item p {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
   color: #757575;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .projects-list-item img {
@@ -320,18 +318,21 @@ a:active { background-color: yellow; } */
   border: 1px solid #eeeeee;
 }
 
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.projects-list-item:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid blue;
-}
-
-.container-portfolio-buttons {
-  width: 611px;
-  margin: 0 auto;
-  outline: 1px solid blue;
 }
 
 .features {
@@ -340,13 +341,12 @@ a:active { background-color: yellow; } */
 }
 
 .team {
-  background-color: skyblue;
+  background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .section {
-  outline: 1px solid magenta;
 }
 
 footer {
@@ -362,9 +362,7 @@ footer {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #fff;
-  outline: 1px solid red;
 }
-
 
 .footer-nav {
   margin-bottom: 20px;
