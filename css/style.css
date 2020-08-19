@@ -225,7 +225,7 @@ a:active { background-color: yellow; } */
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
-  /* text-align: center; */
+  text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-top: 0px;
@@ -235,7 +235,7 @@ a:active { background-color: yellow; } */
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  /* text-align: center; */
+  text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-top: 0;
@@ -246,12 +246,25 @@ a:active { background-color: yellow; } */
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  /* text-align: center; */
+  text-align: center;
   letter-spacing: 0.03em;
 }
 
+.about-our-team-list li img {
+  margin-bottom: 30px;
+}
+
 .about-our-team-list {
-  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-our-team-list-item {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+
 }
 
 .portfolio-link-current-color {
@@ -363,4 +376,17 @@ footer {
 
 .portfolio {
   padding: 94px 0 94px 0;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-work-list {
+  display: flex;
+  justify-content: space-between;
 }
