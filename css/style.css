@@ -195,10 +195,6 @@ a:active { background-color: yellow; } */
   letter-spacing: 0.03em;
 }
 
-.features-list {
-  margin-bottom: 94px;
-}
-
 .about-work-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -344,9 +340,6 @@ a:active { background-color: yellow; } */
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.section {
 }
 
 footer {
