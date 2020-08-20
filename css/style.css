@@ -150,7 +150,7 @@ a:active { background-color: yellow; } */
   /* margin-right: auto; */
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #fff;
@@ -333,6 +333,11 @@ a:active { background-color: yellow; } */
 
 .features {
   padding-top: 94px;
+  padding-bottom: 47px;
+}
+
+.about-work {
+  padding-top: 47px;
   padding-bottom: 94px;
 }
 
